@@ -156,10 +156,10 @@ try:
 
 	#invalid_cross_product = v2.crossProduct(v3) #VectorND Error: Cross product may only be performed with vectors of 3 or 7 dimensions, vectors in use have 4
 
-	#v4 = VectorND( 1, "derp", 3)
+	#v4 = VectorND( 1, "derp", 3) #VectorND Error: Components of vector must be numbers
 	
-	#num = 5
-	#v1.addVectors(num)
+	num = 5
+	#v1.addVectors(num) #VectorND Error: Input must be a VectorND object
 
 except VectorND_Exception as e:
 	print(f"VectorND Error: {e}")

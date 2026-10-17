@@ -1,9 +1,7 @@
 Further implementation of what was learned in Calc 3 for practice with coding, Git, and GitHub.
 
 
-
-Python version coming soon!
-
+Equivalent Python version now available (See 'python_version' directory)
 
 
 The output of the compiled sample main program "VectorND_Math" should be this:

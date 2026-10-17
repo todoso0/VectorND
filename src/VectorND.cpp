@@ -191,7 +191,7 @@ VectorND VectorND::crossProduct(VectorND vector2) {
 	}
 
 	//!! throw error if matching vector D but not 3D or 7D!
-	if (this->dimensions() != 3 and this->dimensions() != 7) {
+	if (this->dimensions() != 3 && this->dimensions() != 7) {
 		throw VectorND_Exception("VectorND Error: Cross product may only be performed with vectors of 3 or 7 dimensions, vectors in use have " + std::to_string(this->dimensions()));
 	}
 
@@ -244,12 +244,12 @@ double VectorND::scalarTripleProduct(VectorND vector2, VectorND vector3) {
 	//Return the resulting scalar value as a double
 
 	//!! throw error if not matching dimensions with vectors!
-	if (this->dimensions() != vector2.dimensions() && this->dimensions() != vector3.dimensions()) {
+	if (this->dimensions() != vector2.dimensions() || this->dimensions() != vector3.dimensions()) {
 		throw VectorND_Exception("VectorND Error: Vector operations may only be performed with vectors of the same number of dimensions");
 	}
 
 	//!! throw error if matching vector D but not 3D or 7D!
-	if (this->dimensions() != 3 and this->dimensions() != 7) {
+	if (this->dimensions() != 3 && this->dimensions() != 7) {
 		throw VectorND_Exception("VectorND Error: Cross product may only be performed with vectors of 3 or 7 dimensions, vectors in use have " + std::to_string(this->dimensions()));
 	}
 
